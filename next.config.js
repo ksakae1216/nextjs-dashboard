@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    ppr: 'incremental',
-  },
+  // 多分、現在のバージョンではまだ使えない(vercelのデプロイでエラーが出る)
+  // experimental: {
+  //   ppr: 'incremental',
+  // },
 };
 
 module.exports = nextConfig;
