@@ -5,8 +5,14 @@ import {
 } from '@/app/lib/data';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
+import { Metadata } from 'next';
 import { Card } from '../ui/dashboard/cards';
 import LatestInvoices from '../ui/dashboard/latest-invoices';
+
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export default async function Page() {
   const revenue = await fetchRevenue();
